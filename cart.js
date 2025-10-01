@@ -51,7 +51,7 @@ document.getElementById("total").textContent = `Total: $${discountedTotal}`;
 //Use innerHTML to maintain line breaks
 document.getElementById("receipt").innerHTML = receipt;
 
-//Step 3 Validate Fixes
+//Step 3 Validate Fixes tested in the browser console
 //Empty cart
 console.log(calculateTotal([])); // 0
 console.log(applyDiscount(0, 0.2)); // 0
