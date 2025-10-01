@@ -51,3 +51,26 @@ From there, use the **Console**, **Sources tab**, and **debugger statements** to
 ---
 
 Let me know if you'd like to add starter files, error clues, or a checklist of bugs to find!
+
+
+Debug Summary
+
+Errors Found:
+
+Loop in calculateTotal used <= → caused undefined access. Fixed to <.
+
+applyDiscount lacked validation → added validation for invalid discount rates.
+
+generateReceipt crashed when total was NaN. Fixed with Number(total).toFixed(2).
+
+Receipt formatting used \n, which doesn’t render in HTML. Changed to <br> and innerHTML.
+
+How DevTools Helped:
+
+Console Tab showed runtime errors (undefined item access).
+
+Call Stack pointed directly to the faulty line inside calculateTotal.
+
+Sources Tab with breakpoints and debugger let me inspect i and cartItems[i].
+
+Tested edge cases in Console to validate fixes (empty cart, single item, extreme discounts).
